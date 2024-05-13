@@ -40,7 +40,7 @@ public class DeliveryRouteService {
                 double time = calculateTime(deliveryPartner.getPartnerLocation(), order.getRestaurant().getRestaurantLocation())
                         + order.getPrepTime() - minTime;
 
-                // Use minTime-adjusted time for comparison
+
                 if (time < minTime) {
                     minTime = time;
                     order.setPrepTime(minTime);
